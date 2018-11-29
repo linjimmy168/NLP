@@ -8,6 +8,7 @@ Created on Mon Feb  5 13:05:03 2018
 import re
 import string
 import nltk
+# nltk.download('all')
 from nltk.tokenize import word_tokenize
 from nltk.corpus import stopwords
 from nltk.stem.porter import PorterStemmer

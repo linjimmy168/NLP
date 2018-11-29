@@ -21,7 +21,7 @@ def label_data(source, destination):
         # Consider only text files that are not already labelled
         if json_filename not in json_file_list:            
             document = file_util.read_file(source + filename, 'r') # Get text from the file
-            sdg_pairs+ =  util.get_SDGs_pair(destination+'nexus/')
+            sdg_pairs =  util.get_SDGs_pair(destination+'nexus/')
             sentences, updated_sdg_pair = util.filterSentences(document, filename, sdg_pairs) # Returns labelled sentences for given text file
             file_util.json_dump(sentences, destination+json_filename, 'w+')
             file_util.json_dump(updated_sdg_pair, destination+'nexus/'+'sdg_pairs.json', 'w+')

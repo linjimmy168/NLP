@@ -110,7 +110,7 @@ def matchSDGs(sent_words, find_targets):
 
 def lookup(sent_words, dictionary):
     labels = []
-    
+
     for key in dictionary.keys():
        keywords =  [nlp_util.tokenize_words(keyword) for keyword in dictionary[key]]
        for key_phrase in keywords:

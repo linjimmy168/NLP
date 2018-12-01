@@ -1,14 +1,9 @@
 import os, sys
-from NEUTool
-
-from src import convert_pdf_to_text, sdg_classifier, goals_summary,NEUTool
+from src import NEUTool
 
 def main(documents_name):
-    path='D:\\#NLTK project\\total'
     try:
-        docList = NEUTool.getClassifyDoc()
-        
-        print 'Generate Excel Success'
+        NEUTool.ConvertPdfToExcel()
     except Exception as e:
          print e
 
